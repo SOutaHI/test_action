@@ -1,0 +1,11 @@
+name: Bash Tracing
+on: push
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    steps:
+      - run; |
+          set -x
+          echo "This is a debug log"
+          date
+          hosename
